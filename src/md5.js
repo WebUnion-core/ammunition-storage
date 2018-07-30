@@ -1,7 +1,7 @@
 /**
  * md5加密的方法
  */
-const MD5 = function (string, len) {
+module.exports = function (string, len) {
     function RotateLeft(lValue, iShiftBits) {
         return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits));
     }
@@ -210,5 +210,3 @@ const MD5 = function (string, len) {
     return temp.toUpperCase();
 
 };
-
-export default MD5;
