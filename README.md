@@ -9,7 +9,7 @@
 
 ```html
 ...
-<script src=""></script>
+<script src="./dist/ammunition.1.0.0.min.js"></script>
 
 <script>
 var ammunition = new Ammunition();
