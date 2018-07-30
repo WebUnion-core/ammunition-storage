@@ -1,0 +1,23 @@
+{
+  "name": "ammunition-storage",
+  "version": "1.0.0",
+  "description": "各种公共工具",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebUnion-core/ammunition-storage.git"
+  },
+  "author": "WebUnion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebUnion-core/ammunition-storage/issues"
+  },
+  "homepage": "https://github.com/WebUnion-core/ammunition-storage#readme",
+  "dependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
