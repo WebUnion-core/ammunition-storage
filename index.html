@@ -5,12 +5,20 @@
     <title></title>
 </head>
 <body>
-    <script src="./dist/ammunition.1.0.0.min.js"></script>
+    <script src="./dist/ammunition-0.0.2.min.js"></script>
     <script>
     var ammunition = new Ammunition();
-    var dateString = (new Date()).valueOf().toString();
+    var date = new Date();
+    var dateString = date.valueOf().toString();
 
-    console.log(ammunition.md5(dateString));
+    // 初始化
+    ammunition.init();
+
+    console.group('test: ');
+        console.groupCollapsed('ammunition.md5: ', ammunition.md5(dateString));
+    console.groupEnd();
+        console.groupCollapsed('(new Date()).format: ', date.format('yyyy-MM-dd hh:mm'));
+    console.groupEnd();
     </script>
 </body>
 </html>
