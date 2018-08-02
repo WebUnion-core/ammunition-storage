@@ -9,12 +9,11 @@
 
 ```html
 ...
-<script src="./dist/ammunition.1.0.0.min.js"></script>
+<script src="./dist/ammunition-0.0.1.min.js"></script>
 
 <script>
 var ammunition = new Ammunition();
-var dateString = (new Date()).valueOf().toString();
-console.log(ammunition.md5(dateString));
+ammunition.init();
 </script>
 ...
 ```
@@ -23,7 +22,23 @@ console.log(ammunition.md5(dateString));
 
 1. `md5`: md5 加密;
 
+    ```js
+    var ammunition = new Ammunition();
+    var date = new Date();
+    var dateString = date.valueOf().toString();
+
+    console.log(ammunition.md5(dateString));
+    ```
+
 2. `cookieUtil`: cookie 操作。
+
+    ```js
+    var ammunition = new Ammunition();
+    var cookieUtil = ammunition.cookieUtil;
+
+    cookieUtil.set('name', 'WJT20', 1);
+    console.log(cookieUtil.get('name'));
+    ```
 
 ## Node.js API ##
 
@@ -35,7 +50,16 @@ npm i -D ammunition-storage
 
 说明:
 
-1. `copyDir`: 拷贝目录
+1. `init`: 初始化。
+
+    ```js
+    const ammunition = require('./index.js');
+
+    ammunition.init();
+    console.log((new Date()).format('yyyy-MM-dd hh:mm'));
+    ```
+
+2. `copyDir`: 拷贝目录。
 
     ```js
     const path = require('path');
@@ -46,6 +70,7 @@ npm i -D ammunition-storage
         tgtPath: path.resolve(__dirname, './dist')    
     });
     ```
+
 
 ---
 
