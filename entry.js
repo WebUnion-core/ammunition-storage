@@ -1,6 +1,6 @@
-var cookieUtil = require('./cookie-util.js');
-var md5 = require('./md5.js');
-var dateFormatInit = require('./../lib/date-format.js');
+var cookieUtil = require('./lib/cookie-util.js');
+var md5 = require('./lib/md5.js');
+var dateFormatInit = require('./lib/date-format.js');
 
 function Ammunition() {};
 Ammunition.prototype = {
