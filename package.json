@@ -1,6 +1,6 @@
 {
   "name": "ammunition-storage",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "弹药库",
   "main": "index.js",
   "scripts": {
