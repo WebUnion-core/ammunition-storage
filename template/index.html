@@ -5,11 +5,18 @@
     <title></title>
 </head>
 <body>
-    <script src="./../dist/ammunition-0.0.2.min.js"></script>
+    <script src="./../dist/ammunition-0.0.3.min.js"></script>
     <script>
     var ammunition = new Ammunition();
     var date = new Date();
     var dateString = date.valueOf().toString();
+    var nameDataAry = [
+        { name: 'A08' },
+        { name: 'A22' },
+        { name: 'A10' },
+        { name: 'A03' },
+        { name: 'A15' }
+    ];
 
     // 初始化
     ammunition.init();
@@ -18,6 +25,7 @@
     console.log('ammunition.md5: ', ammunition.md5(dateString));
     console.log('(new Date()).format: ', date.format('yyyy-MM-dd hh:mm'));
     console.log('ammunition.cookieUtil.get: ', ammunition.cookieUtil.get('name'));
+    console.log('ammunition.sort: ', nameDataAry, ammunition.sort(nameDataAry, 'name', 1));
     </script>
 </body>
 </html>
