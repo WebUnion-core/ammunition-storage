@@ -21,8 +21,8 @@ module.exports = function() {
                 format = format.replace(
                     RegExp.$1,
                     RegExp.$1.length === 1
-                    ? obj[key]
-                    : ('00' + obj[key]).substr(('' + obj[key]).length)
+                        ? obj[key]
+                        : ('00' + obj[key]).substr(('' + obj[key]).length)
                 );
             }
         }

@@ -3,7 +3,7 @@
  * ary -> 操作数组
  * key -> 排序键
  * type -> 升序0，降序1
- **/
+ */
 module.exports = function sort (ary, key, type) {
     var _ary = [];
 

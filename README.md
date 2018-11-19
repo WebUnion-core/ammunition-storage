@@ -1,7 +1,7 @@
 
 # Ammunition Storage #
 
-> 各种公共工具
+> 由 WJT20 开发的 JavaScript 辅助工具，分为 Browser 和 Node.js 两套 API。
 
 ## Browser API ##
 
@@ -23,7 +23,6 @@ ammunition.init();
 1. `md5`: md5 加密;
 
     ```js
-    ...
     var date = new Date();
     var dateString = date.valueOf().toString();
     console.log(ammunition.md5(dateString));
@@ -32,7 +31,6 @@ ammunition.init();
 2. `cookieUtil`: cookie 操作;
 
     ```js
-    ...
     var cookieUtil = ammunition.cookieUtil;
     cookieUtil.set('name', 'WJT20', 1);
     console.log(cookieUtil.get('name'));
@@ -41,7 +39,6 @@ ammunition.init();
 3. `sort`: 数组元素为对象时，根据对象的某个属性值对整个数组进行排序;
 
     ```js
-    ...
     var nameDataAry = [
         { name: 'A08' },
         { name: 'A22' },
@@ -59,10 +56,10 @@ ammunition.init();
      *     { name: 'A08' },
      *     { name: 'A03' }
      * ]
-     **/
+     */
     ```
 
-## Node API ##
+## Node.js API ##
 
 npm 安装:
 
@@ -75,7 +72,7 @@ npm i -D ammunition-storage
 1. `init`: 初始化。
 
     ```js
-    const ammunition = require('./index.js');
+    const ammunition = require('ammunition-storage');
     ammunition.init();
     console.log((new Date()).format('yyyy-MM-dd hh:mm'));
     ```
