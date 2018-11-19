@@ -1,8 +1,8 @@
-var cookieUtil = require('./src/cookie-util.js');
-var md5 = require('./src/md5.js');
-var dateFormatInit = require('./src/date-format.js');
-var sort = require('./src/sort.js');
-var getRandomNumber = require('./src/random-number.js');
+var cookieUtil = require('./cookie-util.js');
+var md5 = require('./md5.js');
+var dateFormatInit = require('./date-format.js');
+var sort = require('./sort.js');
+var getRandomNumber = require('./random-number.js');
 
 function Ammunition() {};
 Ammunition.prototype = {

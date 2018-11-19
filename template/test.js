@@ -9,3 +9,4 @@ ammunition.copyDir({
 });
 
 console.log((new Date()).format('yyyy-MM-dd hh:mm'));
+console.log(ammunition.getRandomNumber(1, 10, 5));

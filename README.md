@@ -59,6 +59,12 @@ ammunition.init();
      */
     ```
 
+4. `getRandomNumber`: 获取指定个数和范围内的随机数字集合:
+
+    ```js
+    console.log(ammunition.getRandomNumber(1, 10, 5)); // 输出: [1,7,8,5,10]
+    ```
+
 ## Node.js API ##
 
 npm 安装:
@@ -91,6 +97,8 @@ npm i -D ammunition-storage
 3. `md5`: 用法同 Browser API;
 
 4. `sort`: 用法同 Browser API;
+
+5. `getRandomNumber`: 用法同 Browser API。
 
 ---
 

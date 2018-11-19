@@ -22,10 +22,12 @@
     ammunition.init();
     ammunition.cookieUtil.set('name', 'WJT20', 1);
 
-    console.log('ammunition.md5: ', ammunition.md5(dateString));
-    console.log('(new Date()).format: ', date.format('yyyy-MM-dd hh:mm'));
-    console.log('ammunition.cookieUtil.get: ', ammunition.cookieUtil.get('name'));
-    console.log('ammunition.sort: ', nameDataAry, ammunition.sort(nameDataAry, 'name', 1));
+    console.log('ammunition.md5(): ', ammunition.md5(dateString));
+    console.log('(new Date()).format(): ', date.format('yyyy-MM-dd hh:mm'));
+    console.log('ammunition.cookieUtil.get(): ', ammunition.cookieUtil.get('name'));
+    console.log('ammunition.sort(): ', nameDataAry, ammunition.sort(nameDataAry, 'name', 1));
+
+    console.log('ammunition.getRandomNumber(): ', ammunition.getRandomNumber(1, 10, 5));
     </script>
 </body>
 </html>
